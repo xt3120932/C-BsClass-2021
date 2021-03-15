@@ -50,7 +50,9 @@ div {
   display: block;
   margin: auto;
 }
-
+.p_line {
+  text-decoration: line-through;
+}
 .bigimgwrap {
   width: 1200px;
   margin: 10px auto;
