@@ -1,0 +1,99 @@
+* {
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti",
+    "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+body {
+  background-color: #f6f6f6;
+}
+p {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333333;
+  margin: 5px;
+}
+
+div {
+  display: block;
+}
+/* .banner {
+  width: 1200px;
+  height: 400px;
+  background-color: cadetblue;
+  margin: auto;
+} */
+.ad_new {
+  width: 1200px;
+  margin: auto;
+  padding: 20px 5%;
+}
+
+.ad_new img {
+  width: 100%;
+  margin: auto;
+  vertical-align: bottom;
+}
+
+.wrap {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.wrap .item {
+  width: 540px;
+  height: 580px;
+  padding: 30px 30px;
+}
+.wrap .item img {
+  width: 440px;
+  display: block;
+  margin: auto;
+}
+
+.bigimgwrap {
+  width: 1200px;
+  margin: 10px auto;
+}
+.bigimgwrap div {
+  width: 1175px;
+  margin: auto;
+}
+
+.bigimgwrap img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.item.triple {
+  width: 340px;
+  height: 400px;
+  padding: 30px 30px;
+}
+
+.item.triple img {
+  width: 100%;
+}
+
+.ytitem {
+  width: 540px;
+  height: 300px;
+  margin: 30px;
+}
+.ytitem p {
+  text-align: center;
+}
+.ytitem iframe {
+  width: 540px;
+  height: 300px;
+}
+.ytitem.triple {
+  width: 340px;
+  height: 300px;
+  margin: 30px;
+}
+.ytitem.triple iframe {
+  width: 340px;
+  height: 191px;
+}
