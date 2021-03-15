@@ -29,8 +29,9 @@ div {
 } */
 .ad_new {
   width: 1200px;
+  height: 230px;
   margin: auto;
-  padding: 20px 5%;
+  padding: 5px 5%;
 }
 
 .ad_new img {
@@ -49,7 +50,7 @@ div {
 .wrap .item {
   width: 540px;
   height: 580px;
-  padding: 30px 30px;
+  padding: 15px 30px;
 }
 .wrap .item img {
   width: 480px;
@@ -78,7 +79,7 @@ div {
 .item.triple {
   width: 350px;
   height: 450px;
-  padding: 30px 25px;
+  padding: 15px 25px;
 }
 
 .item.triple img {
