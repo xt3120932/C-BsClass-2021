@@ -11,15 +11,18 @@ p {
     "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
-div {
+/* div {
   display: block;
-}
+} */
 
 .p_format {
   padding: 0 39px;
 }
 .p_format2 {
   padding: 0 60px;
+}
+.p_line {
+  text-decoration: line-through;
 }
 /* .banner {
   width: 1200px;
@@ -57,9 +60,7 @@ div {
   display: block;
   margin: auto;
 }
-.p_line {
-  text-decoration: line-through;
-}
+
 .bigimgwrap {
   width: 1200px;
   margin: 10px auto;
