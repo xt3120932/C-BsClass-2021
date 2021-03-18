@@ -13,7 +13,7 @@ h2 {
     "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
-.sr-only {
+.sr_only {
   height: 1px;
   width: 1px;
   overflow: hidden;
