@@ -6,7 +6,7 @@
 }
 .wrap {
   width: 100%;
-  height: 75em;
+  height: 800px;
   background-image: url("https://ld-wp.template-help.com/wordpress_imperion/finance_v1/wp-content/uploads/2017/11/finance-skin-slider-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,9 +39,31 @@
   text-align: center;
   text-decoration: underline;
 }
+.banner_title {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content {
+  width: 969px;
+  margin: 0 auto;
+}
+.banner_title .content h2 {
+  width: 969px;
+  font-size: 112px;
+  color: white;
+  margin: 0 auto;
+}
+.banner_title .content h6 {
+  font-size: 18px;
+  color: white;
+  margin: 15px auto;
+}
 .banner {
   width: 100%;
-  height: 80vh;
+  height: 200px;
   background-color: transparent;
   display: flex;
   align-items: flex-end;
@@ -51,36 +73,101 @@
 
 .banner .item {
   max-width: 300px;
-  height: 150px;
+  height: 140px;
   margin: 30px;
   color: white;
-}
-
-.banner h2 img {
   vertical-align: middle;
 }
 
+.banner span img {
+  vertical-align: middle;
+}
+.banner .item span,
+.banner .item p {
+  font-size: 18px;
+  line-height: 2em;
+  font-family: sans-serif;
+}
 .plan {
-  width: 800px;
+  width: 100%;
+  max-width: 1400px;
+  height: 400px;
   display: flex;
-  padding: 20px;
+  padding: 100px 0;
   margin: auto;
 }
-
-.plan h2 {
+.plan .title {
   width: 33%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+}
+.plan h2 {
+  width: 242px;
+  font-size: 32px;
+  line-height: 1.8em;
+  margin: auto;
 }
 
 .plan .text {
   width: 66%;
   border-left: 1px solid #000;
-  padding: 0 20px;
+  padding: 3%;
   column-count: 2;
   column-gap: 20px;
 }
+.plan .text p {
+  font-size: 18px;
+  line-height: 2.5em;
+}
 
-.plan .text p:first-child:first-letter {
-  color: red;
-  font-size: 50px;
-  float: left;
+.plan .text .firstWord {
+  font-size: 54px;
+  font-family: "Prata", Sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1em;
+  color: #c2b697;
+}
+
+.text_area {
+  width: 100%;
+  background-color: #c2b697;
+  padding: 65px 0 85px;
+  display: flex;
+  justify-content: center;
+}
+
+.text_area .text_wrap {
+  width: 70%;
+  height: 100px;
+  padding: 35px 0 0;
+  margin: auto;
+}
+
+.text_area .text_wrap h3 {
+  font-size: 32px;
+  color: white;
+}
+.text_area .text_wrap p {
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+}
+.text_area .btn_wrap {
+  width: 30%;
+  font-size: 18px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.text_area .btn_wrap .get_herf {
+  width: 150px;
+  height: 60px;
+  background-color: #fafafb;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 12px;
 }
