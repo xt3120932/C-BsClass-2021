@@ -12,9 +12,7 @@ h2 {
     "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti",
     "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
-h2 {
-  text-align: center;
-}
+
 .sr-only {
   height: 1px;
   width: 1px;
@@ -128,4 +126,7 @@ h2 {
 .ytitem.triple iframe {
   width: 316px;
   height: 175px;
+}
+.ytitem h2 {
+  text-align: center;
 }
