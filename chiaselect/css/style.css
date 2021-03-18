@@ -1,7 +1,9 @@
 body {
   background-color: #f6f6f6;
 }
-p {
+p,
+h3,
+h2 {
   font-size: 14px;
   line-height: 1.42857143;
   color: #666666;
@@ -9,6 +11,15 @@ p {
   font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
     "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti",
     "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+h2 {
+  text-align: center;
+}
+.sr-only {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
 }
 .p_format2 {
   padding: 0 70px;
@@ -106,7 +117,7 @@ p {
 }
 .ytitem iframe {
   width: 500px;
-  height: 300px;
+  height: 280px;
   margin: auto;
 }
 .ytitem.triple {
@@ -116,5 +127,5 @@ p {
 }
 .ytitem.triple iframe {
   width: 316px;
-  height: 191px;
+  height: 175px;
 }
