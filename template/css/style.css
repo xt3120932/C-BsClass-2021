@@ -324,7 +324,7 @@ a {
   position: relative;
 }
 .count .wrap {
-  width: 80%;
+  width: 1200px;
   height: 215px;
   display: flex;
   padding: 120px 0 115px;
