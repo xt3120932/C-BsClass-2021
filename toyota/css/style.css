@@ -1,0 +1,193 @@
+.five_advantage {
+  width: 100%;
+  height: auto;
+}
+.five_advantage .wrap {
+  min-width: 960px;
+  margin: 0 280px;
+  padding-top: 95px;
+}
+.five_advantage .wrap .title {
+  max-width: 960px;
+  margin: auto;
+}
+.five_advantage .wrap .title h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.five_advantage .title .title_line {
+  display: block;
+  width: 38px;
+  height: 4px;
+  margin: 18px auto 0;
+  background-color: #000000;
+}
+.five_advantage .wrap .btn_wrap {
+  max-width: 960px;
+  margin: 50px auto 97px;
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 184px;
+  height: 36px;
+  margin: 0 5px;
+  font-size: 18px;
+  border: 0px;
+  border-bottom: 2px solid #ae0014;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+button:hover {
+  background-color: #ae0014;
+  color: white;
+}
+.five_advantage .wrap .control_wrap {
+  max-width: 960px;
+  height: 4532px;
+}
+.five_advantage .wrap .control_wrap .box {
+  max-width: 960px;
+  height: 795px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0 0;
+  margin-bottom: 75px;
+}
+.five_advantage .wrap .control_wrap .item {
+  width: 695px;
+  height: 430px;
+  margin-right: 80px;
+  display: flex;
+  position: relative;
+  top: 120px;
+}
+.five_advantage .wrap .control_wrap .item .content {
+  width: 355px;
+  height: 388px;
+  background-color: wheat;
+  position: absolute;
+  top: -130px;
+  left: -185px;
+}
+.five_advantage .wrap .control_wrap .item .content .title {
+  height: 130px;
+  background-color: #ae0014;
+  color: white;
+  display: flex;
+}
+.five_advantage .wrap .control_wrap .item .content .title span {
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 110px;
+  padding: 0 0 0 10px;
+  line-height: 110px;
+}
+.five_advantage .wrap .control_wrap .item .content .title h3 {
+  display: inline-block;
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+.five_advantage .wrap .control_wrap .item .content .txt {
+  height: 218px;
+  background-color: black;
+  padding: 20px;
+}
+.five_advantage .wrap .control_wrap .item .content .txt h4 {
+  color: white;
+  font-size: 26px;
+  margin: 20px 0 10px;
+}
+.five_advantage .wrap .control_wrap .item .content .txt p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.8em;
+}
+.five_advantage .wrap .control_wrap .item .decoration {
+  width: 439px;
+  height: 290px;
+  background-color: #eeeeee;
+  position: absolute;
+  top: -90px;
+  right: -80px;
+  z-index: -1;
+}
+
+.five_advantage .wrap .control_wrap .item .because {
+  width: 652px;
+  /* height: 215px; */
+  background-color: #eeeeee;
+  position: absolute;
+  bottom: -245px;
+  left: -136px;
+  padding: 15px;
+}
+.five_advantage .wrap .control_wrap .item .because h4 {
+  display: inline-block;
+  color: #ae0014;
+  font-size: 20px;
+  font-weight: bold;
+}
+.five_advantage .wrap .control_wrap .item .because span {
+  display: inline-block;
+  width: 410px;
+  height: 3px;
+  background-color: #ae0014;
+  margin: 0 0 5px 3px;
+}
+
+.five_advantage .wrap .control_wrap .item .because h5 {
+  background-color: black;
+  color: white;
+  padding: 5px 8px;
+  display: inline-block;
+  margin: 10px 0 7px;
+  border-radius: 5px;
+}
+.five_advantage .wrap .control_wrap .item .because li {
+  color: #ccc;
+  margin-left: 5px;
+  color: gray;
+  margin-left: 5px;
+  text-indent: 10px;
+}
+
+.five_advantage .wrap .control_wrap .box:nth-child(2),
+.five_advantage .wrap .control_wrap .box:nth-child(4) {
+  justify-content: flex-start;
+  margin-bottom: 75px;
+  height: 695px;
+}
+.five_advantage .wrap .control_wrap .box:nth-child(2) .item,
+.five_advantage .wrap .control_wrap .box:nth-child(4) .item {
+  left: 8px;
+}
+.five_advantage .wrap .control_wrap .box:nth-child(2) .item .content,
+.five_advantage .wrap .control_wrap .box:nth-child(4) .item .content {
+  right: 0px;
+  left: 597px;
+}
+.five_advantage .wrap .control_wrap .box:nth-child(2) .item .content .title,
+.five_advantage .wrap .control_wrap .box:nth-child(4) .item .content .title {
+  flex-direction: row-reverse;
+}
+
+.five_advantage .wrap .control_wrap .box:nth-child(2) .item .because,
+.five_advantage .wrap .control_wrap .box:nth-child(4) .item .because {
+  bottom: -143px;
+  left: 210px;
+}
+.five_advantage .wrap .control_wrap .box:nth-child(2) .item .decoration,
+.five_advantage .wrap .control_wrap .box:nth-child(4) .item .decoration {
+  width: 518px;
+  height: 413px;
+  top: -70px;
+  right: -80px;
+}
