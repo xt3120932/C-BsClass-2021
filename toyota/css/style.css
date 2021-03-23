@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+  color: black;
+}
 .five_advantage {
   width: 100%;
   height: auto;
@@ -16,13 +20,18 @@
   line-height: 40px;
   font-weight: bold;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.five_advantage .title .title_line {
-  display: block;
+.title h2::after {
+  background-color: black;
+  height: 5px;
   width: 38px;
-  height: 4px;
-  margin: 18px auto 0;
-  background-color: #000000;
+  content: "";
+  margin-top: 20px;
 }
 .five_advantage .wrap .btn_wrap {
   max-width: 960px;
@@ -30,24 +39,27 @@
   display: flex;
   justify-content: center;
 }
-button {
-  width: 184px;
+.five_advantage .wrap .btn_wrap a {
+  width: 183px;
   height: 36px;
   margin: 0 5px;
+}
+.five_advantage .wrap .btn_wrap a div {
+  width: 183px;
+  height: 33px;
   font-size: 18px;
-  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
   border-bottom: 2px solid #ae0014;
   transition: 0.5s;
-  cursor: pointer;
 }
-
-button:focus {
-  outline: none;
-}
-button:hover {
+.five_advantage .wrap .btn_wrap a div:hover {
   background-color: #ae0014;
   color: white;
 }
+
 .five_advantage .wrap .control_wrap {
   max-width: 960px;
   height: 4532px;
@@ -190,4 +202,8 @@ button:hover {
   height: 413px;
   top: -70px;
   right: -80px;
+}
+.five_advantage .wrap .control_wrap .box:nth-child(5) .item .because {
+  bottom: -135px;
+  left: -136px;
 }
