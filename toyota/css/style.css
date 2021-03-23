@@ -80,6 +80,15 @@ a {
   position: relative;
   top: 120px;
 }
+/* .five_advantage .wrap .control_wrap .item img + span {
+  width: 57px;
+  height: 36px;
+  display: inline-block;
+}
+.five_advantage .wrap .control_wrap .item img + span:before {
+  content: " 1234 ";
+  width: 100%;
+} */
 .five_advantage .wrap .control_wrap .item .content {
   width: 355px;
   height: 388px;
@@ -122,6 +131,11 @@ a {
   font-size: 20px;
   line-height: 1.8em;
 }
+/* .five_advantage .wrap .control_wrap .item .content .txt .yt_icon {
+  width: 57px;
+  height: 36px;
+  margin: 17px 0 0 260%;
+} */
 .five_advantage .wrap .control_wrap .item .decoration {
   width: 439px;
   height: 290px;
