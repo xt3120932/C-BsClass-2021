@@ -39,7 +39,7 @@ a {
   display: flex;
   justify-content: center;
 }
-.five_advantage .wrap .btn_wrap .item {
+.five_advantage .wrap .btn_wrap div a {
   width: 182px;
   height: 36px;
   margin: 0 5px;
@@ -52,16 +52,23 @@ a {
   font-size: 18px;
 }
 
-.five_advantage .wrap .btn_wrap .item::before {
+.five_advantage .wrap .btn_wrap div a::before {
   content: "";
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 182px;
   height: 2px;
   background-color: #ae0014;
 }
-.five_advantage .wrap .btn_wrap .item:hover {
+.five_advantage .wrap .btn_wrap div a:hover {
+  color: white;
+}
+.five_advantage .wrap .btn_wrap div a:hover::before {
   color: #ae0014;
+  height: 36px;
+  z-index: -1;
+  transition: 0.4s;
 }
 
 .five_advantage .wrap .control_wrap {
