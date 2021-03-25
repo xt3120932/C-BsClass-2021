@@ -162,6 +162,7 @@ a {
   bottom: -235px;
   left: -136px;
   padding: 15px;
+  z-index: 1;
 }
 .five_advantage .wrap .control_wrap .item .because h4 {
   display: inline-block;
