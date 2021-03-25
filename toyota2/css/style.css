@@ -130,7 +130,7 @@ a {
 }
 
 .five_advantage .wrap .control_wrap .content .txt {
-  height: 218px;
+  /* height: 218px; */
   background-color: black;
   padding: 20px;
 }
