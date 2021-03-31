@@ -160,7 +160,9 @@ body h1 {
   line-height: 1.5em;
   padding: 4%;
 }
-
+.element-wrap {
+  margin-bottom: 5%;
+}
 .element-wrap .element-title {
   width: 100%;
   padding: 3.5%;
