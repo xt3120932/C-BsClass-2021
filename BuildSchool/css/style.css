@@ -96,10 +96,12 @@ body h1 {
 .carousel-item:nth-child(3) h5 {
   background-color: #656666d8;
 }
-.carousel-caption .txt p {
+.carousel-caption .txt a {
   background-color: #3d9be999;
   padding: 15px 20px;
   font-size: 16px;
+  text-decoration: none;
+  color: white;
 }
 .carousel-indicators [data-bs-target] {
   width: 8px;
@@ -320,7 +322,7 @@ body h1 {
   .navbar-brand span {
     color: black;
   }
-  .carousel-caption .txt p {
+  .carousel-caption .txt a {
     padding: 10px 15px;
     margin: 0 2%;
   }
@@ -336,6 +338,10 @@ body h1 {
 }
 
 @media screen and (max-width: 767px) {
+  .carousel,
+  .wrap {
+    margin-bottom: 0%;
+  }
   .carousel-caption {
     top: 0;
   }
@@ -350,7 +356,7 @@ body h1 {
   .carousel-caption h5 span {
     font-size: 16px;
   }
-  .carousel-caption .txt p,
+  .carousel-caption .txt a,
   .carousel-caption p span,
   .carousel-item:nth-child(1) h5 + p span,
   .carousel-item:nth-child(5) h5 + p span {
