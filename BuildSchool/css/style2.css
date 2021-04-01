@@ -75,8 +75,8 @@ body h1 {
   line-height: 1.5em;
 }
 .carousel-caption h5 + p {
-  flex-grow: 0.5;
-  padding: 2% 0;
+  flex-grow: 0.3;
+  padding: 0;
 }
 .carousel-item:nth-child(1) h5 + p span,
 .carousel-item:nth-child(5) h5 + p span {
@@ -97,12 +97,20 @@ body h1 {
   background-color: #656666d8;
 }
 .carousel-caption .txt a {
-  background-color: #3d9be999;
-  padding: 15px 20px;
+  padding: 15px 15px;
   font-size: 16px;
   text-decoration: none;
   color: white;
 }
+.carousel-caption .txt div {
+  background-color: #3d9be999;
+  padding: 1%;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .carousel-indicators [data-bs-target] {
   width: 8px;
   height: 8px;
@@ -324,7 +332,6 @@ body h1 {
   }
   .carousel-caption .txt a {
     padding: 10px 15px;
-    margin: 0 2%;
   }
   .carousel-caption h5 {
     font-size: 50px;
@@ -362,7 +369,6 @@ body h1 {
   .carousel-item:nth-child(5) h5 + p span {
     font-size: 12px;
     padding: 2px;
-    margin: 5px;
   }
   .carousel-item:nth-child(1) h5,
   .carousel-item:nth-child(2) h5,
