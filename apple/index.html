@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .price {
+            padding: 8% 0;
+        }
+
+        .ui {
+            overflow-y: auto;
+        }
+
+        .phone-type {}
+
+        .phone-type:hover {
+            border: 2px solid #0070c9;
+        }
+
+        .phone-type:focus {
+            border: 2px solid #0070c9;
+        }
+
+        .red {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        .black {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        .white {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        .blue {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: blue;
+        }
+
+        .green {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        .column {
+            flex-direction: column;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="top" class="container d-flex justify-content-center"></div>
+
+    <section class="container">
+        <div class="wrap row">
+            <div class="img_wrap col-6"></div>
+            <div class="ui col-6"></div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let div = document.getElementById("top");
+
+        //top button
+        let btn1 = document.createElement('btn');
+        btn1.classList.add('btn', 'btn-secondary', 'm-2');
+        btn1.innerText = 'Iphone';
+        let btn2 = document.createElement('btn');
+        btn2.classList.add('btn', 'btn-secondary', 'm-2');
+        btn2.innerText = 'Ipad';
+        let btn3 = document.createElement('btn');
+        btn3.classList.add('btn', 'btn-secondary', 'm-2');
+        btn3.innerText = 'Mac';
+        div.appendChild(btn1);
+        div.appendChild(btn2);
+        div.appendChild(btn3);
+
+        //img
+        let img_wrap = document.getElementsByClassName("img_wrap")[0];
+        let img = document.createElement('img');
+        img.classList.add('w-100');
+        img.src = "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-mini-white-select-2020?wid=470&hei=556&fmt=png-alpha&.v=1604343707000";
+        img_wrap.appendChild(img);
+
+        //ui
+        let ui = document.getElementsByClassName("ui")[0];
+        ui.classList.add('p-4')
+        //title
+        let title_wrap = document.createElement('div');
+        let title_p = document.createElement('p', '');
+        title_p.classList.add('fs-6');
+        title_p.innerText = "全新";
+        let title_h2 = document.createElement('h2');
+        title_h2.innerText = "購買 iPhone 12";
+        title_wrap.appendChild(title_p);
+        title_wrap.appendChild(title_h2);
+        ui.appendChild(title_wrap);
+
+        //choose
+        let choose = document.createElement('div');
+        let choose_p = document.createElement('p');
+        choose_p.innerText = '選擇機型。';
+        let choose_a = document.createElement('a');
+        choose_a.setAttribute('herf', '#');
+        choose_a.innerText = "哪一款機型最適合你？";
+
+        choose.appendChild(choose_p);
+        choose.appendChild(choose_a);
+        ui.appendChild(choose);
+
+        //choose content
+        for (let i = 0; i < 2; i++) {
+            let choose_content = document.createElement('div');
+            choose_content.classList.add('phone-type', 'row', 'p-3', 'col-10', 'border', 'border-secondary', 'rounded', 'm-3');
+            let left = document.createElement('div');
+            left.classList.add('col-6');
+            let right = document.createElement('div');
+            right.classList.add('col-6', 'd-flex', 'justify-content-center', 'align-item-center');
+
+            let span_title = document.createElement('span');
+            span_title.innerText = "iPhone 12 mini";
+            span_title.classList.add('d-block');
+            let span_size = document.createElement('span');
+            span_size.innerText = "5.4 吋顯示器1";
+            span_size.classList.add('d-block');
+
+            let span_price = document.createElement('span');
+            span_price.innerText = "NT$ 23,900 起";
+            span_price.classList.add('price');
+
+            right.appendChild(span_price);
+            left.appendChild(span_title);
+            choose_content.appendChild(left);
+            left.appendChild(span_size);
+            choose_content.appendChild(left);
+            choose_content.appendChild(right);
+            choose.appendChild(choose_content);
+            ui.appendChild(choose);
+        }
+
+        //line
+        let line = document.createElement('div');
+        line.classList.add('col-10', 'mx-3', 'my-4', 'border-top', 'border-secondary')
+        ui.appendChild(line);
+
+        //color
+        let color_box = document.createElement('div');
+        let color_p = document.createElement('p');
+        color_p.innerText = '選擇顏色。';
+        let btn_group = document.createElement('div');
+        btn_group.classList.add('col-10', 'd-flex', 'flex-wrap');
+
+        let btn_color1 = document.createElement('div');
+        btn_color1.classList.add('col-5', 'p-2', 'm-3', 'd-flex', 'justify-content-center', 'align-item-center', 'column', 'border', 'border-secondary', 'rounded')
+        let color_red = document.createElement('div');
+        color_red.classList.add('red', 'm-auto');
+        let label_red = document.createElement('label');
+        label_red.innerText = "紅色";
+
+        let btn_color2 = document.createElement('div');
+        btn_color2.classList.add('col-5', 'p-2', 'm-3', 'd-flex', 'justify-content-center', 'align-item-center', 'column', 'border', 'border-secondary', 'rounded')
+        let color_black = document.createElement('div');
+        color_black.classList.add('black', 'm-auto');
+        let label_black = document.createElement('label');
+        label_black.innerText = "黑色";
+
+        let btn_color3 = document.createElement('div');
+        btn_color3.classList.add('col-5', 'p-2', 'm-3', 'd-flex', 'justify-content-center', 'align-item-center', 'column', 'border', 'border-secondary', 'rounded')
+        let color_white = document.createElement('div');
+        color_white.classList.add('white', 'm-auto');
+        let label_white = document.createElement('label');
+        label_white.innerText = "白色";
+
+        let btn_color4 = document.createElement('div');
+        btn_color4.classList.add('col-5', 'p-2', 'm-3', 'd-flex', 'justify-content-center', 'align-item-center', 'column', 'border', 'border-secondary', 'rounded')
+        let color_blue = document.createElement('div');
+        color_blue.classList.add('blue', 'm-auto');
+        let label_blue = document.createElement('label');
+        label_blue.innerText = "藍色";
+
+        let btn_color5 = document.createElement('div');
+        btn_color5.classList.add('col-5', 'p-2', 'm-3', 'd-flex', 'justify-content-center', 'align-item-center', 'column', 'border', 'border-secondary', 'rounded')
+        let color_green = document.createElement('div');
+        color_green.classList.add('green', 'm-auto');
+        let label_green = document.createElement('label');
+        label_green.innerText = "綠色";
+        label_green.classList.add('d-block');
+
+        btn_color1.appendChild(color_red);
+        btn_color1.appendChild(label_red);
+        btn_color2.appendChild(color_black);
+        btn_color2.appendChild(label_black);
+        btn_color3.appendChild(color_white);
+        btn_color3.appendChild(label_white);
+        btn_color4.appendChild(color_blue);
+        btn_color4.appendChild(label_blue);
+        btn_color5.appendChild(color_green);
+        btn_color5.appendChild(label_green);
+        btn_group.appendChild(btn_color1);
+        btn_group.appendChild(btn_color2);
+        btn_group.appendChild(btn_color3);
+        btn_group.appendChild(btn_color4);
+        btn_group.appendChild(btn_color5);
+        color_box.appendChild(color_p);
+        color_box.appendChild(btn_group);
+        ui.appendChild(color_box);
+    </script>
+</body>
+
+</html>
